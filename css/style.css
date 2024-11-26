@@ -54,9 +54,6 @@ a{
 main{
     width: 70%;
     margin: 30px auto;
-
-    /* debug */
-    background-color: aqua;
 }
 
 .product-list{
@@ -70,13 +67,24 @@ main{
     margin-bottom: 20px;
     text-align: center;
     position: relative;
-
-    /* debug */
-    background-color: grey;
 }
 
 .product img{
     max-width: 100%;
+}
+
+.hover-img{
+    display: none;
+}
+
+/* nasconde la prima img al passaggio */
+.product:hover .default-img{
+    display: none;
+}
+
+/* mostra la seconda img al passaggio */
+.product:hover .hover-img{
+    display: inline-block;
 }
 
 .label{
@@ -98,6 +106,7 @@ main{
     padding: 3px 5px;
 }
 
+/* cuore  */
 .preferiti{
     width: 40px;
     position: absolute;
@@ -108,15 +117,20 @@ main{
     padding: 5px;
 }
 
-
 .description{
     text-align: start;
+    font-size: 12px;
+}
+h5{
+    font-size: 15px;
 }
 
 .prezzo-scontato{
     color: red;
+    font-weight: bold;
 }
 
 .prezzo-intero{
     text-decoration: line-through;
+    font-weight: bold;
 }
