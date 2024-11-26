@@ -160,3 +160,30 @@ footer{
     font-weight: bold;
 }
 
+/* media queries per dimensione tablet */
+@media (max-width: 770px) {
+    .container-header, 
+    .container-footer, 
+    main {
+        width: 90%;
+    }
+
+     /* cambia la direzione per incolonnare */
+    .header-list ul, 
+    .footer ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+
+    .header-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* 2 contenuti per riga */
+    .product {
+        width: 48%;
+    }
+}
+

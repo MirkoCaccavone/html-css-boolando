@@ -73,6 +73,7 @@ main{
 .content-section{
     width: 45%;
     margin: 60px;
+    min-width: 160px;
 }
 
 
